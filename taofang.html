@@ -2,80 +2,165 @@
 <html>
 <head>
 	<meta charset="utf-8">
+	<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+	<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
 	<title>淘房网</title>
-	<link rel="stylesheet" href="bootstrap.min.css">
 	<link rel="stylesheet" href="taofang.css">
-	<script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
-	<script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+	<link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+	<script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://cdn.staticfile.org/popper.js/1.15.0/umd/popper.min.js"></script>
+	<script src="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </head>
 <body>
 
-<nav class="navbar navbar-default" role="navigation" id="raise" >
-	<div class="container-fluid">
+<nav class="navbar navbar-default" role="navigation" id="daohang" >
 	<div class="navbar-header">
-		<a class="link navbar-brand " href="#" >淘房网</a>
-	</div>
-	<!-- <div>
-		<ul class="nav navbar-nav">
-			<li class="active"><a href="#">iOS</a></li>
-			<li><a href="#">SVN</a></li>
-			<li class="dropdown">
-				<a href="#" class="dropdown-toggle" data-toggle="dropdown">
-					Java
-					<b class="caret"></b>
-				</a>
-				<ul class="dropdown-menu">
-					<li><a href="#">jmeter</a></li>
-					<li><a href="#">EJB</a></li>
-					<li><a href="#">Jasper Report</a></li>
-					<li class="divider"></li>
-					<li><a href="#">分离的链接</a></li>
-					<li class="divider"></li>
-					<li><a href="#">另一个分离的链接</a></li>
-				</ul>
-			</li>
-		</ul>
-	</div> -->
+		<a style="color: white">淘房网</a>
 	</div>
 </nav>
-<div id="nice">
-	<span>地理位置：</span>
-	<select class="inputmargin">
-		<option>全部</option>
-		<option>南山区</option>
-		<option>宝安区</option>
-		<option>福田区</option>
-		<option>龙华区</option>
-	</select>
-	<span >价格范围：</span>
-	<input type="text">
-	-
-	<input class="inputmargin" type="text">
-	<span>交通：</span>
-	<select>
-		<option>1KM</option>
-		<option>3KM</option>
-		<option>5KM</option>
-	</select>
-	&nbsp;内&nbsp;
-	<select class="inputmargin">
-		<option>全部</option>
-		<option>有地铁</option>
-		<option>仅优公交</option>	
-	</select>
-	<span>通勤时间：</span>
-	<a href="#">新增</a>
-	<button id="search" class="btn btn-primary">查询</button>
-	<a href="#" id="clear">清空</a>
+
+<!--下面是筛选区-->
+<div class="row" id="shaixuan">
+	<div class="space">
+		<span>地理位置：</span>
+		<select>
+			<option>全部</option>
+			<option>南山区</option>
+			<option>宝安区</option>
+			<option>福田区</option>
+			<option>龙华区</option>
+		</select>
+	</div>
+
+	<div class="space">
+		<span >价格范围：</span>
+		<select>
+			<option>首付</option>
+			<option>总价</option>
+		</select>
+		<input>
+		-
+		<input>
+		万元
+	</div>
+
+	<div class="space">
+		<span>交通：</span>
+		<select>
+			<option>1KM</option>
+			<option>3KM</option>
+			<option>5KM</option>
+		</select>
+		&nbsp;内&nbsp;
+		<select>
+			<option>全部</option>
+			<option>有地铁</option>
+			<option>仅优公交</option>	
+		</select>
+	</div>
+
+	<div class="space textspace">
+		<span>通勤时间：</span>
+		<a href="#" data-toggle="modal" data-target="#myModal">新增</a>
+	</div>
+    <!--筛选区结束-->
+		<a href="#" id ="qingkong">清空</a>
+		<button class="btn-xs btn-primary search">查询</button>
 </div>
-<div id="allmap">
-</div>
+<!--筛选区结束-->
+
+<!-- 模态框 -->
+  <div class="modal fade" id="myModal" style="top: 30%;">
+    <div class="modal-dialog">
+      <div class="modal-content">
+   
+        <!-- 模态框头部 -->
+        <div class="modal-header">
+          <h6 class="modal-title">新增</h6>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+   
+        <!-- 模态框主体 -->
+        <div class="modal-body" style="font-size: 12px">
+          工作地点：
+          <a href="#">选择</a>
+          <p></p>
+          通勤时间：
+          <input>
+          分钟
+        </div>
+   
+        <!-- 模态框底部 -->
+        <div class="modal-footer">
+          <button type="button" class="btn-sm btn-primary" data-dismiss="modal">确定</button>
+          <button type="button" class="btn-sm btn-secondary" data-dismiss="modal">取消</button>
+        </div>
+   
+      </div>
+    </div>
+  </div>
+
+
+<!--全局提示条-->
+	<div class="alert alert-warning alert-dismissible" id="tishi" style="position :absolute;width: 100%; text-align:center;margin:0px;height: 30px;padding-top: 3px;padding-right: 10px;z-index: 10">
+    	<span style="font-size: 12px">目前仅支持查询新房</span>
+    	<!-- <span style="float: right;" id="shutdown">X</span> -->
+    	<img src="shutdown.jpg" style="width: 15px;height: 15px;float: right;" id='shutdown'>
+    </div>
+
+    <script>
+    	window.onload=function(){
+    		shutdown=$("#shutdown")
+    		tishi=$("#tishi")
+    		fuceng=$("#fuceng")
+    		shutdown.click(function () 
+    		{
+    			tishi.attr('style','display:none')
+    		})
+    	}
+    	
+    </script>
+
+<div id="allmap" style="overflow: hidden;height: 968px"></div>
+
+<!--浮层呼出-->
+<div id="fuceng" style="position:absolute; width: 400px;height: 700px;top: 120px;right: 
+0px; background-color: white;border-radius: 2px;border-color:#186E93;border-width:1px;border-style:solid;z-index: 9999" >
+		<header style="margin: 10px">统计</header>
+		<hr>
+
+		<div class="card" style="width: 370px;margin-left: 15px">
+			<img class="card-img-left" src="shutdown.jpg" style="width: 50px;height: 50px;margin: 10px;float: left;">
+			<h6 class="card-title" style="position:absolute;top: 10px;left: 70px">京基御景半山</h6>
+		</div>
+
+		<img src="shutdown.jpg" id="dianwo" style="margin-left:-30px;
+		margin-top:200px;height: 30px;width: 30px;">
+	</div>
+	<img src="shutdown.jpg" id="dianwo1" style="position:fixed;right: 0px;top:450px;height:30px;width:30px;display:none">
+
+ 	<script>
+    		dianwo=$("#dianwo")
+    		fuceng=$("#fuceng")
+    		dianwo1=$("#dianwo1")
+    		dianwo.click(function () {
+    		fuceng.hide(1000,"linear")
+    		dianwo1.show()
+    		})
+
+    		dianwo1.click(function () {
+    		fuceng.show()
+    		dianwo1.hide()
+    	    })
+    </script>
+
 </body>
-<script type="text/javascript" src="//api.map.baidu.com/api?v=2.0&ak=ahLkxSa2YuPedn1FkzLryIKTlkF8GTNM"></script>
+<script type="text/javascript" src="http://api.map.baidu.com/api?v=3.0&ak=6hgutBdjmUs6wdAadSw1UDXax9eexB53"></script>
 <script type="text/javascript">
 	// 百度地图API功能
 	var map = new BMap.Map("allmap");    // 创建Map实例
-	map.centerAndZoom("深圳");  // 初始化地图,设置中心点坐标和地图级别
+	map.centerAndZoom(new BMap.Point(114.025973657,22.5460535462),12);  // 初始化地图,设置中心点坐标和地图级别
 	//添加地图类型控件
 	map.addControl(new BMap.MapTypeControl({
 		mapTypes:[
@@ -84,5 +169,8 @@
         ]}));	  
 	map.setCurrentCity("深圳");          // 设置地图显示的城市 此项是必须设置的
 	map.enableScrollWheelZoom(true);     //开启鼠标滚轮缩放
+	map.setMapStyleV2({     
+  styleId: '51fc7d7d87536051ace4a8aa5ab22e12'
+});
 </script>
 </html>

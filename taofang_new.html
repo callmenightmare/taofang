@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta name="renderer" content="webkit"/>
+<meta http-equiv="Cache-Control" content="no-transform"/>
+<meta http-equiv="Cache-Control" content="no-siteapp"/>
+<meta name="format-detection" content="telephone=no"/>
+<title>深圳地图找房_用地图找深圳新房楼盘(深圳链家新房)</title>
+<meta name="description" content="深圳地图找新楼盘，通过地图找深圳新楼盘房源"/>
+<meta name="keywords" content="深圳地图找新楼盘"/>
+<link href="/favicon.ico" type="image/x-icon" rel="icon">
+<link href="/favicon.ico" type="image/x-icon" rel="shortcut icon">
+<link rel="stylesheet" href="//s1.ljcdn.com/phoenix/static/dist/common/site.css?_v=20191031154436">
+<link rel="alternate" media="only screen and (max-width: 640px)" href="">
+<link rel="stylesheet" href="//s1.ljcdn.com/phoenix/static/dist/pages/map/index.css?_v=20191031154436">
+</head>
+
+<body>
+<div class="l-wrap">
+	<div class="head clear">
+		<div class="mod-logo fl" log-mod="logo">
+			<a href="#" class="fl">
+			<span class="logo-bg"></span>
+			</a>
+			<span class="line fl"></span>
+			<dl class="fl">
+				<dt>南山区<i class="arrow"></i></dt>
+				<dd>
+				<ol>
+					<li><a href="#" data-xftrack="10140">龙岗区</a></li>
+					<li><a href="#" data-xftrack="10140">福田区</a></li>
+					<li><a href="#" data-xftrack="10140">光明区</a></li>
+					<li><a href="#" data-xftrack="10140">宝安区</a></li>
+					<li><a href="#" data-xftrack="10140">坪山区</a></li>
+				</ol>
+				</dd>
+			</dl>
+		</div>
+		<ul class="nav-list post_ulog_exposure_scroll" data-ulog-exposure="xinfangpc_show=20091">
+			<li><a href="#" data-xftrack="20099" data-other-action="1">首页</a></li>
+			<li><a href="#" data-xftrack="20099" data-other-action="2">楼盘</a></li>
+			<li><a href="#" data-xftrack="20099" data-other-action="3">在售</a></li>
+			<li><a class="check" href="#" data-xftrack="20099" data-other-action="4">地图找房</a></li>
+		</ul>
+		<div class="mod-search fl" log-mod="search">
+			<div class="form">
+				<input type="text" autocomplete="off" maxlength="100" id="input" placeholder="请输入楼盘名称或地点..."><button class="btn" data-xftrack="10141_1"><i></i></button>
+			</div>
+		</div>
+		<div class="mod-userbar fr" log-mod="userbar">
+			<span>客服热线  1010-9666</span>
+		</div>
+	</div>
+</div>
+<div class="l-wrap">
+	<div class="mod-map" log-mod="map" style="position: absolute; top: 0; right: 0; bottom: 0; left: 0;margin-right: 375px;">
+		<div id="map" class="map" data-xftrack="10143">
+		</div>
+		<ol class="ctrl">
+			<li class="zoom-ctrl zoom-plus">+</li>
+			<li class="zoom-ctrl zoom-minus">-</li>
+		</ol>
+		<div class="aside">
+			<div class="filter">
+				<span class="mask" style="display: none;"></span>
+				<ol class="clear">
+					<li class="li-filter fl" data-role="li-filter" data-type="filter" class="item" data-xftrack="10145">
+					<span>筛选条件</span><i class="drop-i"></i></li>
+					<li class="li-filter fl" data-role="li-sort" data-type="sort" data-xftrack="10148"><span>默认排序</span><i class="drop-i"></i></li>
+				</ol>
+			</div>
+			<div class="list-wrap1">
+				<span class="mask" style="display: none;"></span>
+				<div class="hd">
+                可视范围内找到 
+					<span class="ret">0</span> 个楼盘, 共 <span class="ret-all">0</span> 个
+				</div>
+				<div class="list">
+					<ul>
+					</ul>
+				</div>
+			</div>
+			<div class="list-wrap2">
+				<div class="list">
+					<ul class="content">
+					</ul>
+					<span class="return" data-xftrack="10150"><span class="return-btn">返回</span></span>
+				</div>
+				<div class="list-wrap">
+					<div class="hd">
+						<span class="ret-tle"></span>共有 <span class="ret">0</span> 个户型
+					</div>
+					<div class="list list-small">
+						<ul>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="list-wrap3" style="display: none;">
+				<ul data-role="filterContainer">
+				</ul>
+				<ul>
+					<li class="filter-item filter-draglist">
+					<span class="filter-title">售价：</span>
+					<span class="filter-dragfilter">
+					<span class="filter-drag-dragcontainer">
+					<a style="left: 0;"></a>
+					<a style="left: 260px;"></a>
+					</span>
+					<span class="filter-drag-inputcontainer">
+					<input type="text" value="0"/><em>万</em>
+					<span></span>
+					<input type="text" value="1000"/><em>万以上</em>
+					</span>
+					<span class="filter-drag-error" style="display: none;">请输入正确的价格筛选条件</span>
+					</span>
+					</li>
+					<li class="filter-item filter-item-clean">
+					<a class="filter-btn-clear" data-xftrack="10147" title="清空所选">清空所选</a>
+					</li>
+					<li class="filter-item filter-item-btnwrap">
+					<a class="filter-btn-confirm" data-xftrack="10146" title="确定">确定</a>
+					<a class="filter-btn-cancel" data-xftrack="10146" title="取消">取消</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="progress-bar" id="progress-bar">
+	<div class="peg">
+	</div>
+</div>
+<script>
+var g_conf = {
+    city: 'sz',
+    page: "_",
+    cityId: '440300',
+    cityName: '深圳',
+    mapWrapper: 'map',
+    filterConf: {"type":{"name":"\u7c7b\u578b","type":"1","key":"type","symbol":"nht","weight":"60","options":[{"name":"\u4f4f\u5b85","weight":"60","data":{"type":"107500000003"},"symbol_value":"1"},{"name":"\u522b\u5885","weight":"60","data":{"type":"107500000004"},"symbol_value":"2"},{"name":"\u5546\u4e1a","weight":"60","data":{"type":"107500000007"},"symbol_value":"4"},{"name":"\u5199\u5b57\u697c","weight":"60","data":{"type":"107500000006"},"symbol_value":"3"},{"name":"\u5e95\u5546","weight":"60","data":{"type":"107500000016"},"symbol_value":"5"}]},"room_count":{"name":"\u623f\u578b","type":"2","show_type":"3","key":"room_count","symbol":"l","options":[{"name":"\u4e0d\u9650"},{"name":"1\u5c45","weight":"50","symbol":"l","data":{"room_count":"1"},"symbol_value":"1"},{"name":"2\u5c45","weight":"50","symbol":"l","data":{"room_count":"2"},"symbol_value":"2"},{"name":"3\u5c45","weight":"50","symbol":"l","data":{"room_count":"3"},"symbol_value":"3"},{"name":"4\u5c45","weight":"50","symbol":"l","data":{"room_count":"4"},"symbol_value":"4"},{"name":"5\u5c45","weight":"50","symbol":"l","data":{"room_count":"5"},"symbol_value":"5"},{"name":"5\u5c45+","weight":"50","symbol":"l","data":{"room_count":"6"},"symbol_value":"6"}]},"total_price":{"name":"\u603b\u4ef7","type":"1","key":"total_price","unit":"\u4e07","symbol":"p","weight":"40","options":[{"name":"\u4e0d\u9650","url_section":"bp0ep9999"},{"name":"100\u4e07\u4ee5\u4e0b","weight":"40","data":{"max_total_price":"100"},"symbol_value":"1","url_section":"bp0ep100"},{"name":"100-150\u4e07","weight":"40","data":{"min_total_price":"100","max_total_price":"150"},"symbol_value":"2","url_section":"bp100ep150"},{"name":"150-200\u4e07","weight":"40","data":{"min_total_price":"150","max_total_price":"200"},"symbol_value":"3","url_section":"bp150ep200"},{"name":"200-300\u4e07","weight":"40","data":{"min_total_price":"200","max_total_price":"300"},"symbol_value":"4","url_section":"bp200ep300"},{"name":"300-500\u4e07","weight":"40","data":{"min_total_price":"300","max_total_price":"500"},"symbol_value":"5","url_section":"bp300ep500"},{"name":"500-1000\u4e07","weight":"40","data":{"min_total_price":"500","max_total_price":"1000"},"symbol_value":"6","url_section":"bp500ep1000"},{"name":"1000\u4e07\u4ee5\u4e0a","weight":"40","data":{"min_total_price":"1000"},"symbol_value":"7","url_section":"bp1000ep9999"}]},"feature":{"name":"\u7279\u8272","type":"2","key":"tags","symbol":"nhtt","weight":"70","options":[{"name":"\u514d\u8d39\u4e13\u8f66","weight":"70","data":{"tags":"has_car"},"symbol_value":"22"},{"name":"\u4f18\u60e0\u697c\u76d8","weight":"70","data":{"tags":"is_discount"},"symbol_value":"19"},{"name":"\u54c1\u724c\u623f\u4f01","weight":"70","data":{"tags":"is_band"},"symbol_value":"21"},{"name":"\u5730\u94c1\u6cbf\u7ebf","weight":"70","data":{"tags":"is_subway_house"},"symbol_value":"1"},{"name":"\u516c\u4ea4\u76f4\u8fbe","weight":"70","data":{"tags":"bus_through"},"symbol_value":"37"},{"name":"\u5c0f\u6237\u578b","weight":"70","data":{"tags":"small_frame"},"symbol_value":"2"},{"name":"\u73b0\u623f","weight":"70","data":{"tags":"ready_house"},"symbol_value":"3"},{"name":"\u4f4e\u5355\u4ef7","weight":"70","data":{"tags":"low_avg_price"},"symbol_value":"25"},{"name":"\u4f4e\u603b\u4ef7","weight":"70","data":{"tags":"low_total_price"},"symbol_value":"26"},{"name":"\u590d\u5f0f","weight":"70","data":{"tags":"is_mixstruct"},"symbol_value":"14"},{"name":"\u4eba\u8f66\u5206\u6d41","weight":"70","data":{"tags":"independent_road"},"symbol_value":"35"}]},"sale_status":{"name":"\u552e\u5356\u72b6\u6001","type":"1","key":"sell_status","symbol":"nhs","weight":"90","options":[{"name":"\u5728\u552e","weight":"90","data":{"sell_status":"3"},"symbol_value":"1"},{"name":"\u672a\u5f00\u76d8","weight":"90","data":{"sell_status":"1"},"symbol_value":"3"},{"name":"\u552e\u7f44","weight":"90","data":{"sell_status":"4"},"symbol_value":"2"}]},"sort":{"name":"\u6392\u5e8f","type":"1","key":"sort","symbol":"co","options":[{"name":"\u9ed8\u8ba4\u6392\u5e8f"},{"name":"\u5355\u4ef7\u7531\u4f4e\u5230\u9ad8","data":{"sort":"priceUnit asc"},"symbol_value":"41"},{"name":"\u5355\u4ef7\u7531\u9ad8\u5230\u4f4e","data":{"sort":"priceUnit desc"},"symbol_value":"42"},{"name":"\u5f00\u76d8\u65f6\u95f4\u987a\u5e8f","data":{"sort":"openTime asc"},"symbol_value":"51"},{"name":"\u5f00\u76d8\u65f6\u95f4\u5012\u5e8f","data":{"sort":"openTime desc"},"symbol_value":"52"}]}},
+    sortConf: {"name":"\u6392\u5e8f","type":"1","key":"sort","symbol":"co","options":[{"name":"\u9ed8\u8ba4\u6392\u5e8f"},{"name":"\u5355\u4ef7\u7531\u4f4e\u5230\u9ad8","data":{"sort":"priceUnit asc"},"symbol_value":"41"},{"name":"\u5355\u4ef7\u7531\u9ad8\u5230\u4f4e","data":{"sort":"priceUnit desc"},"symbol_value":"42"},{"name":"\u5f00\u76d8\u65f6\u95f4\u987a\u5e8f","data":{"sort":"openTime asc"},"symbol_value":"51"},{"name":"\u5f00\u76d8\u65f6\u95f4\u5012\u5e8f","data":{"sort":"openTime desc"},"symbol_value":"52"}]},
+    urlPath: {
+        basePath: '/loupan/',
+        searchSug: 'mapsearch/sug',
+        searchIndex: 'mapsearch/query',
+        district: 'mapsearch/district',
+        building: 'mapsearch/resblock',
+        roomtype: 'mapsearch/frames'
+    },
+    filter: '',
+    sort: ''
+};
+</script>
+<script>window.smartyArgs = {"fe_root":"\/\/s1.ljcdn.com\/phoenix:80\/","js_ns":"xinfang_map","controller":"loupan","nation":{"name":"\u4e2d\u56fd","short":"cn","nation_id":0},"cur_city_id":440300,"cur_city_name":"\u6df1\u5733","cur_city_short":"sz","cur_city_spell":"SHENZHEN","mobile_url":"","is_newsale":0,"env":"prod"};window.$is_newsale = 0; // 人店：0 网销：1
+    //统计buffer队列
+    window.$ULOG = {};
+    window.$ULOG.buffer = [];
+    window.$ULOG.send = function(evtid, param) {
+	    window.$ULOG.buffer.push([evtid, param]);
+    };
+    </script>
+<script src="//s1.ljcdn.com/phoenix/static/dist/common/jquery.min.js?_v=20191031154436"></script>
+<script src="//s1.ljcdn.com/phoenix/static/dist/common/ejs.min.js?_v=20191031154436"></script>
+<script src="//s1.ljcdn.com/phoenix/static/dist/common/common.js?_v=20191031154436"></script>
+<script src="//s1.ljcdn.com/phoenix/static/dist/common/template-ejs.js?_v=20191031154436"></script>
+<script src="https://s1.ljcdn.com/agent-sj-sdk/1.1.0/agent-sj-sdk.js"></script>
+<script type="text/javascript" src="//api.map.baidu.com/api?v=2.0&ak=dASz7ubuSpHidP1oQWKuAK3q"></script>
+<script type="text/javascript" src="//s1.ljcdn.com/phoenix/static/dist/pages/map/index.js?_v=20191031154436"></script>
+<div style="display:none">
+	<!-- google -->
+	<script>
+            (function(i, s, o, g, r, a, m) {
+              i['GoogleAnalyticsObject'] = r;
+              i[r] = i[r] ||
+              function() {
+                (i[r].q = i[r].q || []).push(arguments)
+              }, i[r].l = 1 * new Date();
+              a = s.createElement(o), m = s.getElementsByTagName(o)[0];
+              a.async = 1;
+              a.src = g;
+              m.parentNode.insertBefore(a, m)
+            })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+            switch (window.location.hostname) {
+            case "www.lianjia.com":
+              ga('create', 'UA-55936351-1', 'auto');
+              ga('send', 'pageview');
+              ga('create', 'UA-64253156-1', 'auto', {
+                'name' : 'past'
+              });
+              ga('past.send', 'pageview');
+              break;
+            case "bj.lianjia.com":
+              ga('create', 'UA-55871340-1', 'auto');
+              ga('send', 'pageview');
+              ga('create', 'UA-64257554-1', 'auto', {
+                'name' : 'past'
+              });
+              ga('past.send', 'pageview');
+              break;
+            case 'tj.lianjia.com':
+              ga('create', 'UA-55875231-1', 'auto');
+              ga('send', 'pageview');
+              ga('create', 'UA-64257943-1', 'auto', {
+                'name' : 'past'
+              });
+              ga('past.send', 'pageview');
+              break;
+            case 'nj.lianjia.com':
+              ga('create', 'UA-55873426-1', 'auto');
+              ga('send', 'pageview');
+              ga('create', 'UA-64253751-1', 'auto', {
+                'name' : 'past'
+              });
+              ga('past.send', 'pageview');
+              break;
+            case 'dl.lianjia.com':
+              ga('create', 'UA-55870447-1', 'auto');
+              ga('send', 'pageview');
+              ga('create', 'UA-64247539-1', 'auto', {
+                'name' : 'past'
+              });
+              ga('past.send', 'pageview');
+              break;
+            case 'cd.lianjia.com':
+              ga('create', 'UA-55870653-1', 'auto');
+              ga('send', 'pageview');
+              ga('create', 'UA-64268152-1', 'auto', {
+                'name' : 'past'
+              });
+              ga('past.send', 'pageview');
+              break;
+            case 'qd.lianjia.com':
+              ga('create', 'UA-55872336-1', 'auto');
+              ga('create', 'UA-64261868-1', 'auto', {
+                'name' : 'past'
+              });
+              ga('send', 'pageview');
+              ga('past.send', 'pageview');
+              break;
+            case 'hz.lianjia.com':
+              ga('create', 'UA-55872128-1', 'auto');
+              ga('create', 'UA-64269651-1', 'auto', {
+                'name' : 'past'
+              });
+              ga('send', 'pageview');
+              ga('past.send', 'pageview');
+              break;
+            case 'sh.lianjia.com':
+              ga('create', 'UA-55872133-1', 'auto');
+              ga('send', 'pageview');
+              ga('create', 'UA-64248152-1', 'auto', {
+                'name' : 'past'
+              });
+              ga('past.send', 'pageview');
+              break;
+            case 'su.lianjia.com':
+              ga('create', 'UA-60600448-1', 'auto');
+              ga('send', 'pageview');
+              break;
+            case 'xm.lianjia.com':
+              ga('create', 'UA-65428058-1', 'auto');
+              ga('send', 'pageview');
+              break;
+            case 'sz.lianjia.com':
+              ga('create', 'UA-66812100-1', 'auto');
+              ga('send', 'pageview');
+              break;
+            case 'xa.lianjia.com':
+              ga('create', 'UA-66848023-1', 'auto');
+              ga('send', 'pageview');
+              break;
+            case 'cq.lianjia.com':
+              ga('create', 'UA-66832431-1', 'auto');
+              ga('send', 'pageview');
+              break;
+            case 'wh.lianjia.com':
+              ga('create', 'UA-66856830-1', 'auto');
+              ga('send', 'pageview');
+              break;
+            case 'cs.lianjia.com':
+              ga('create', 'UA-66847639-1', 'auto');
+              ga('send', 'pageview');
+              break;
+            case 'fang.lianjia.com':
+              ga('create', 'UA-66842144-1', 'auto');
+              ga('send', 'pageview');
+              break;
+            case 'bj.fang.lianjia.com':
+              ga('create', 'UA-66849657-1', 'auto');
+              ga('send', 'pageview');
+              break;
+            case 'sh.fang.lianjia.com':
+              ga('create', 'UA-66853440-1', 'auto');
+              ga('send', 'pageview');
+              break;
+            case 'sz.fang.lianjia.com':
+              ga('create', 'UA-66847941-1', 'auto');
+              ga('send', 'pageview');
+              break;
+            case 'cd.fang.lianjia.com':
+              ga('create', 'UA-66833338-1', 'auto');
+              ga('send', 'pageview');
+              break;
+            case 'tj.fang.lianjia.com':
+              ga('create', 'UA-66833962-1', 'auto');
+              ga('send', 'pageview');
+              break;
+            case 'nj.fang.lianjia.com':
+              ga('create', 'UA-66829759-1', 'auto');
+              ga('send', 'pageview');
+              break;
+            case 'dl.fang.lianjia.com':
+              ga('create', 'UA-66834157-1', 'auto');
+              ga('send', 'pageview');
+              break;
+            case 'qd.fang.lianjia.com':
+              ga('create', 'UA-66847673-1', 'auto');
+              ga('send', 'pageview');
+              break;
+            case 'hz.fang.lianjia.com':
+              ga('create', 'UA-66830161-1', 'auto');
+              ga('send', 'pageview');
+              break;
+            case 'su.fang.lianjia.com':
+              ga('create', 'UA-66834360-1', 'auto');
+              ga('send', 'pageview');
+              break;
+            case 'xm.fang.lianjia.com':
+              ga('create', 'UA-66842359-1', 'auto');
+              ga('send', 'pageview');
+              break;
+            case 'cs.fang.lianjia.com':
+              ga('create', 'UA-66848242-1', 'auto');
+              ga('send', 'pageview');
+              break;
+            case 'wh.fang.lianjia.com':
+              ga('create', 'UA-66837255-1', 'auto');
+              ga('send', 'pageview');
+              break;
+            case 'cq.fang.lianjia.com':
+              ga('create', 'UA-66854882-1', 'auto');
+              ga('send', 'pageview');
+              break;
+            case 'xa.fang.lianjia.com':
+              ga('create', 'UA-66848778-1', 'auto');
+              ga('send', 'pageview');
+              break;
+            case 'jn.fang.lianjia.com':
+              ga('create', 'UA-73096301-1', 'auto');
+              ga('send', 'pageview');
+              break;
+            case 'gz.fang.lianjia.com':
+              ga('create', 'UA-77065775-1', 'auto');
+              ga('send', 'pageview');
+              break;
+            case 'sjz.fang.lianjia.com':
+              ga('create', 'UA-73058787-1', 'auto');
+              ga('send', 'pageview');
+              break;
+            case 'yt.fang.lianjia.com':
+              ga('create', 'UA-86725208-1', 'auto');
+              ga('send', 'pageview');
+              break;
+            case 'us.lianjia.com':
+              ga('create', 'UA-66842178-1', 'auto');
+              ga('send', 'pageview');
+              break;
+            case 'uk.lianjia.com':
+              ga('create', 'UA-66858464-1', 'auto');
+              ga('send', 'pageview');
+              break;
+            case 'au.lianjia.com':
+              ga('create', 'UA-66860803-1', 'auto');
+              ga('send', 'pageview');
+              break;
+            case 'ca.lianjia.com':
+              ga('create', 'UA-66851395-1', 'auto');
+              ga('send', 'pageview');
+              break;
+            case 'm.lianjia.com':
+            ga('create', 'UA-55871942-1', 'auto');
+            ga('create', 'UA-34859395-1', 'auto', {
+              'name' : 'past'
+            });
+            ga('create', 'UA-61982569-1', 'auto', {
+              'name' : 'new'
+            });
+            ga('send', 'pageview');
+            ga('past.send', 'pageview');
+            ga('new.send', 'pageview');
+            break;
+            case 'agent.lianjia.com':
+              ga('create', 'UA-60860114-1', 'auto');
+              ga('send', 'pageview');
+            break;
+            case 'cms.lianjia.com':
+              ga('create', 'UA-60839596-1', 'auto');
+              ga('send', 'pageview');
+            break;
+            case 'user.lianjia.com':
+              ga('create', 'UA-64593984-1', 'auto');
+              ga('send', 'pageview');
+            break;
+            }
+            ga('create', 'UA-55876525-1', 'auto', {
+              'name' : 'global'
+            });
+            ga('global.send', 'pageview');
+            ga('create', 'UA-60608360-1', 'auto', {
+              'name' : 'new_global'
+            });
+            ga('new_global.send', 'pageview');
+            ga('create', 'UA-64639325-1', 'auto', {
+              'name' : 'dianpu_agent'});
+            ga('dianpu_agent.send', 'pageview');
+            ga('create', 'UA-75863705-1', 'auto',{
+              'name' : 'all_fang_lianjia'});
+            ga('all_fang_lianjia', 'pageview');
+            $(document).on('click','[data-dianji]',function(){ga('send','event',$(this).data('dianji'),'click','inside_referral',1);})
+            </script>
+	<!-- CNZZ STAT -->
+	<script type="text/javascript">
+            (function() {
+              var id=0;
+              switch (window.location.hostname) {
+              case "www.lianjia.com":
+                id=1253477541;
+                break;
+              case "bj.lianjia.com":
+                id=1253477573;
+                break;
+              case "nj.lianjia.com":
+                id=1253492138;
+                break;
+              case "tj.lianjia.com":
+                id=1253477585;
+                break;
+              case "cd.lianjia.com":
+                id=1253492306;
+                break;
+              case "dl.lianjia.com":
+                id=1253492418;
+                break;
+              case "qd.lianjia.com":
+                id=1253492431;
+                break;
+              case "hz.lianjia.com":
+                id=1253492436;
+                break;
+              case "sh.lianjia.com":
+                id=1253492439;
+                break;
+              case "su.lianjia.com":
+                id=1254525908;
+                break;
+              case "m.lianjia.com":
+                id=1253491255;
+                break;
+              case "agent.lianjia.com":
+                id=1254574589;
+                break;
+              case "cms.lianjia.com":
+                id=1254574663;
+                break;
+            case "user.lianjia.com":
+                id=1255606315;
+                break;
+            case "xm.lianjia.com":
+                id=1255847100;
+                break;
+            case "sz.lianjia.com":
+                id=1255849469;
+                break;
+            case "wh.lianjia.com":
+                id=1255849575;
+                break;
+            case "xa.lianjia.com":
+                id=1255849580;
+                break;
+            case "cq.lianjia.com":
+                id=1255849584;
+                break;
+            case "cs.lianjia.com":
+                id=1255849590;
+                break;
+            case "gz.lianjia.com":
+                id=1255849599;
+                break;
+            case "nc.lianjia.com":
+                id=1255849602;
+                break;
+            case "wx.lianjia.com":
+                id=1255849628;
+                break;
+            case "sy.lianjia.com":
+                id=1255849613;
+                break;
+            case "fz.lianjia.com":
+                id=1255849622;
+                break;
+            case "sjz.lianjia.com":
+                id=1255849629;
+                break;
+            case "zz.lianjia.com":
+                id=1255849631;
+                break;
+            case "hrb.lianjia.com":
+                id=1255849634;
+                break;
+            case "nb.lianjia.com":
+                id=1255849638;
+                break;
+            case "jn.lianjia.com":
+                id=1255849654;
+                break;
+            case "ty.lianjia.com":
+                id=1255849660;
+                break;
+            case "fang.lianjia.com":
+                id=1256144437;
+                break;
+            case "bj.fang.lianjia.com":
+                id=1256144455;
+                break;
+            case "sh.fang.lianjia.com":
+                id=1256144506;
+                break;
+            case "tj.fang.lianjia.com":
+                id=1256144531;
+                break;
+            case "nj.fang.lianjia.com":
+                id=1256144568;
+                break;
+            case "cd.fang.lianjia.com":
+                id=1256144579;
+                break;
+            case "sz.fang.lianjia.com":
+                id=1256189346;
+                break;
+            case "dl.fang.lianjia.com":
+                id=1256189370;
+                break;
+            case "qd.fang.lianjia.com":
+                id=1256189385;
+                break;
+            case "hz.fang.lianjia.com":
+                id=1256189456;
+                break;
+            case "cs.fang.lianjia.com":
+                id=1256189477;
+                break;
+            case "xa.fang.lianjia.com":
+                id=1256189488;
+                break;
+            case "cq.fang.lianjia.com":
+                id=1256189500;
+                break;
+            case "su.fang.lianjia.com":
+                id=1256189521;
+                break;
+            case "xm.fang.lianjia.com":
+                id=1256189542;
+                break;
+            case "wh.fang.lianjia.com":
+                id=1256296306;
+                break;
+            case "jn.fang.lianjia.com":
+                id=1257392697;
+                break;
+            case "sjz.fang.lianjia.com":
+                id=1257392744;
+                break;
+            case "fs.fang.lianjia.com":
+                id=1259272651;
+                break;
+            case "dg.fang.lianjia.com":
+                id=1259317044;
+                break;
+            case "gz.fang.lianjia.com":
+                id=1259317647;
+                break;
+            case "hui.fang.lianjia.com":
+                id=1259317812;
+                break;
+            case "sy.fang.lianjia.com":
+                id=1259317822;
+                break;
+            case "yt.fang.lianjia.com":
+                id=1259317870;
+                break;
+            case "zs.fang.lianjia.com":
+                id=1259318357;
+                break;
+            case "zh.fang.lianjia.com":
+                id=1259318412;
+                break;
+            case "yz.fang.lianjia.com":
+                id=1259318446;
+                break;
+            case "nt.fang.lianjia.com":
+                id=1259318479;
+                break;
+            case "wf.fang.lianjia.com":
+                id=1259318494;
+                break;
+            case "wx.fang.lianjia.com":
+                id=1259318563;
+                break;
+            case "wz.fang.lianjia.com":
+                id=1259318613;
+                break;
+            case "ts.fang.lianjia.com":
+                id=1259318691;
+                break;
+            case "jx.fang.lianjia.com":
+                id=1259318709;
+                break;
+            case "ty.fang.lianjia.com":
+                id=1259318742;
+                break;
+            case "hk.fang.lianjia.com":
+                id=1259318778;
+                break;
+            case "lin.fang.lianjia.com":
+                id=1259318881;
+                break;
+            case "xz.fang.lianjia.com":
+                id=1259318896;
+                break;
+            case "world.lianjia.com":
+                id=1256189625;
+                break;
+            case "us.lianjia.com":
+                id=1256189653;
+                break;
+            case "uk.lianjia.com":
+                id=1256189664;
+                break;
+            case "au.lianjia.com":
+                id=1256189704;
+                break;
+            case "ca.lianjia.com":
+                id=1256189731;
+                break;
+              }
+              var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+              if (id) {
+                document.write(unescape("%3Cspan id='cnzz_stat_icon_" + id + "'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "w.cnzz.com/c.php%3Fid%3D" + id + "' type='text/javascript'%3E%3C/script%3E"));
+            }
+            }
+            )();
+            var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+            document.write(unescape("%3Cspan id='cnzz_stat_icon_1254525948'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "w.cnzz.com/c.php%3Fid%3D1254525948' type='text/javascript'%3E%3C/script%3E"));
+            var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+            document.write(unescape("%3Cspan id='cnzz_stat_icon_1255633284'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "w.cnzz.com/c.php%3Fid%3D1255633284' type='text/javascript'%3E%3C/script%3E"));
+            var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1255604082'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s95.cnzz.com/z_stat.php%3Fid%3D1255604082' type='text/javascript'%3E%3C/script%3E"));
+            $(document).on('click','[data-dianji]',function(){_czc.push(﻿['_trackEvent',$(this).data('dianji'),'click','inside_referral',1]);});
+            </script>
+	<!-- DSP -->
+	<script type="text/javascript">
+            var _mvq = _mvq || [];
+            _mvq.push(['$setAccount', 'm-173171-0']);
+            _mvq.push(['$logConversion']);
+            (function() {
+                var mvl = document.createElement('script');
+                mvl.type = 'text/javascript'; mvl.async = true;
+                mvl.src = ('https:' == document.location.protocol ? 'https://static-ssl.mediav.com/mvl.js' : 'http://static.mediav.com/mvl.js');
+                var s = document.getElementsByTagName('script')[0];
+                s.parentNode.insertBefore(mvl, s);
+            })();
+            </script>
+</div>
+<!-- lianjia ulog -->
+<div style="display:none">
+	<script type="text/javascript">window.__UDL_CONFIG={'cid': '440300','f': document.referrer,'ljweb_channel_key':'xinfang_map','sample_mark': '','ucid': ''};</script>
+	<div style="display:none">
+		<script src="//s1.ljcdn.com/phoenix/static/dist/common/ljulog.js?_v=20191031154436"}"></script>
+	</div>
+</div>
+<!-- 引入如下script用于引入核心jssdk，请不要删除。 -->
+<script async="" src="https://dlswbr.baidu.com/heicha/mw/abclite-2011-s2.js"></script>
+<script type="text/javascript">
+  $.listener.on('userInfo', function (data) {
+    window.loginData = data;
+  });
+  window.login(); // 初始化登录
+  $(window).on('load', function() {
+    // SEO 百度自动推送URL
+    (function(){
+      var bp = document.createElement('script');
+      var curProtocol = window.location.protocol.split(':')[0];
+      if (curProtocol === 'https'){
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+      }
+      else{
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+      }
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(bp, s);
+    })();
+  });
+  </script>
+</body>
+</html>
