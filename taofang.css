@@ -46,5 +46,49 @@ input{
 	margin-top: 8px;
 }
 
+#fuceng{
+	 position:absolute; 
+	 width: 400px;
+	 height: 700px;
+	 top: 120px;
+	 right: 0px; 
+	 background-color: white;
+	 border-radius: 2px;
+	 border-color:#186E93;
+	 border-width:1px;
+	 border-style:solid;
+	 z-index: 9999;
+}
+
+.fuceng_title{
+	vertical-align: middle;
+	padding: 10px;
+	border-bottom: 1px solid #186E93;
+}
+
+.card_style{
+	width: 370px;
+	margin: 15px;
+	height: 80px;
+}
+
+.fa-bank{
+	margin: 15px;
+	color: gray;
+}
+
+.card_title_style{
+	position:absolute;
+	top: 15px;
+	left: 80px;
+}
+
+.care_text_style{
+	position:absolute;
+	top: 40px;
+	left: 80px;
+	font-size: 12px;
+}
+
 
 #allmap {width: 100%;margin:0;font-family:"微软雅黑";}

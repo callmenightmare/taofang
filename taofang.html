@@ -8,6 +8,7 @@
 	<link rel="stylesheet" href="taofang.css">
 	<!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
 	<link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
 	<script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
 	<script src="https://cdn.staticfile.org/popper.js/1.15.0/umd/popper.min.js"></script>
 	<script src="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
@@ -125,14 +126,18 @@
 <div id="allmap" style="overflow: hidden;height: 968px"></div>
 
 <!--浮层呼出-->
-<div id="fuceng" style="position:absolute; width: 400px;height: 700px;top: 120px;right: 
-0px; background-color: white;border-radius: 2px;border-color:#186E93;border-width:1px;border-style:solid;z-index: 9999" >
-		<header style="margin: 10px">统计</header>
-		<hr>
+<div id="fuceng">
+		<div class="fuceng_title">统计</div>
 
-		<div class="card" style="width: 370px;margin-left: 15px">
-			<img class="card-img-left" src="shutdown.jpg" style="width: 50px;height: 50px;margin: 10px;float: left;">
-			<h6 class="card-title" style="position:absolute;top: 10px;left: 70px">京基御景半山</h6>
+		<div class="card card_style">
+			<div>
+			<i class="fa fa-bank" ></i>
+			</div>
+
+			<div>
+			<h6 class="card-title card_title_style">京基御景半山</h6>
+			<span class="card_text_style">均价：3.9万</span>
+			</div>
 		</div>
 
 		<img src="shutdown.jpg" id="dianwo" style="margin-left:-30px;
